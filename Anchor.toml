@@ -1,0 +1,23 @@
+skip_local_validator = true
+
+[toolchain]
+package_manager = "npm"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.devnet]
+merchant_registry = "8v5vhk23UWumv3ReypP8hetreRsLFMcACDhrn2mZb38b"
+
+[programs.localnet]
+merchant_registry = "4BTPQXTtfaZd5zwNLXJTwXMywPioEzuxJPyMFzkEt9K8"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "npm run test:anchor"
+
+

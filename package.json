@@ -1,0 +1,33 @@
+{
+  "name": "solana-payrail",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Payrail Solana payment infrastructure",
+  "type": "module",
+  "scripts": {
+    "test": "npm run test:anchor",
+    "test:anchor": "ts-mocha -p ./tests/tsconfig.json -t 1000000 tests/**/*.ts",
+    "codegen": "codama run js",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@anchor-lang/core": "^1.2.0",
+    "@codama/nodes-from-anchor": "1.5.1",
+    "@codama/renderers-js": "2.3.0",
+    "@solana/web3.js": "^1.99.0",
+    "@types/chai": "^5.2.3",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^26.2.0",
+    "chai": "^6.3.0",
+    "codama": "1.8.0",
+    "mocha": "^11.8.0",
+    "ts-mocha": "^11.1.0",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "@codama/nodes": "1.8.0",
+    "@codama/visitors-core": "1.8.0",
+    "@codama/visitors": "1.8.0",
+    "@codama/validators": "1.8.0"
+  }
+}
